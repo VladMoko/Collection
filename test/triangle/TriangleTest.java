@@ -6,15 +6,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class TriangleTest {
 
-    @Test
-    void getName() {
-        Triangle triangle = new Triangle("Triangle",2,2);
-        assertEquals("Triangle",triangle.getName());
-    }
 
     @Test
     void getArea() {
-        Triangle triangle = new Triangle("Triangle",2,2);
+        Triangle triangle = new Triangle(2,2);
         assertEquals(2,triangle.getArea());
     }
 }

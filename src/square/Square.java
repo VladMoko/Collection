@@ -3,17 +3,12 @@ package square;
 import shape.AbstractShape;
 
 public class Square extends AbstractShape {
-    private String name;
     private double side;
 
-    public Square(String name, double side) {
-        this.name = name;
+    public Square(double side) {
         this.side = side;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public double getSide() {
         return side;
@@ -21,11 +16,6 @@ public class Square extends AbstractShape {
 
     public void setSide(double side) {
         this.side = side;
-    }
-
-    @Override
-    public String getName() {
-        return name;
     }
 
     @Override
